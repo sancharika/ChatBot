@@ -8,10 +8,9 @@ pyttsx3.speak("Welcome to my assistant ")
 while True:
 	print("Enter your choice : " , end=" ")
 	pyttsx3.speak("Enter your choice")
-	p=input()
-	#Alexa-Holes
+	p=input()  #input taken from user 
 	
-	if   (("notepad" in p)or ("editor" in p)):
+	if   (("notepad" in p)or ("editor" in p)):  #condition statements for interacting with user
 		pyttsx3.speak("Opening Notepad")
 		os.system("notepad")
 	elif  (("chorme" in p)or ("google" in p)):
@@ -28,7 +27,7 @@ while True:
 		pyttsx3.speak("Done")	
 	elif (("exit" in p) or ("quit" in p)):
 		pyttsx3.speak("good bye, have a nice day")
-		break
+		break  #exit statement
 	else : 
 		print("Not support")
 		pyttsx3.speak("sorry ! I can't understand you ")
